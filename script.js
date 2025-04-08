@@ -9,7 +9,7 @@ function textHtmlFunc(ids, texts, Matext)
 }
 
 // HEAD H1 
-textHtmlFunc("h1", "Celine Dion", "color:rgb(119, 119, 74);padding-right:30px");
+//textHtmlFunc("h1", "Celine Dion", "color:rgb(119, 119, 74);padding-right:30px");
 // ABOUT 
 textHtmlFunc("about", "About Celine dion", "color:white;font-size:30px;font-weight:bold;padding:20px;")
 //listAlbum
