@@ -1,5 +1,5 @@
 *{
-    /* background-color: rgb(119, 119, 74); */
+    /* background-color: rgb(119, 119, 74); : 77774a */
     background-color: rgb(119, 119, 74);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin:0;
@@ -50,6 +50,12 @@ h1{
    font-size: 20px;
 
 
+}
+
+.navBarr > a:hover
+{
+    color:white;
+    background-color: rgb(119, 119, 74);
 }
 
 /* PLAY LIST */
@@ -148,6 +154,12 @@ ul > li > a {
     border-bottom: solid 2px white;
 }
 
+.network > li > a:hover
+{
+    color: rgb(119, 119, 74);
+    background-color:white;
+
+}
 
 /*
 .GridTwo
