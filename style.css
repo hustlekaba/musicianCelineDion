@@ -58,6 +58,26 @@ h1{
     background-color: rgb(119, 119, 74);
 }
 
+/***/
+.listAlbum{
+    padding: 10px;
+    padding-left: 2px;
+    padding-right: 35px;
+    background-color:white;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.listAlbum > div
+{
+   background-color: transparent;
+   color: rgb(119, 119, 74);
+
+
+}
+
 /* PLAY LIST */
 table {
     border: solid 2px white;
