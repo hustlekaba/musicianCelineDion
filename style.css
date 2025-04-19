@@ -1,3 +1,7 @@
+body{
+    --varGrayColor: rgb(92, 91, 91);
+}
+
 *{
     /* background-color: rgb(119, 119, 74); : 77774a */
     background-color: rgb(119, 119, 74);
@@ -6,7 +10,7 @@
 }
 .container
 {
-   width: 1000px;
+   max-width: 1000px;
    margin-left: auto;
    margin-right: auto;
 }
@@ -19,6 +23,7 @@
 /*  NAVBAR**/ 
 .groupNavTitle
 {
+    
     background-color: white;
     display: flex;
     justify-content: space-between;
@@ -27,11 +32,11 @@
     text-transform: uppercase;
 }
 
-h1{
+/* h1{
     font-size: 20px;
     padding-right: 10px;
     background-color: white;
-}
+} */
 
 .navBarr
 {
@@ -51,12 +56,15 @@ h1{
 
 
 }
-
+.imageHeader{
+    width:100%;
+}
 .navBarr > a:hover
 {
     color:white;
     background-color: rgb(119, 119, 74);
 }
+
 
 /***/
 .listAlbum{
@@ -75,6 +83,12 @@ h1{
    background-color: transparent;
    color: rgb(119, 119, 74);
 
+
+}
+ 
+/****/
+.liPFirstLine::first-line{
+    color: var(--varGrayColor);
 
 }
 
@@ -105,6 +119,7 @@ td > a
 /**  GRID */
 .gridDiv
 {
+
     display:grid;
     grid-template-columns: 2fr 2fr;
     gap: 10px;
@@ -138,7 +153,7 @@ td > a
 }
 .footerContainer
 {
-   width: 1000px;
+   max-width: 1000px;
    margin-left: auto;
    margin-right: auto;
    background-color: white;
@@ -163,8 +178,6 @@ ul {
 
 ul li {
     list-style: none;
-   
-
 }
 
 ul > li > a {
@@ -188,23 +201,196 @@ ul > li > a {
     grid-column-end: 5;
 } */
 
-@media screen and (max-width: 813px) 
+.logo{
+    background-color: white;
+    padding-right: 30px;
+    width: 200px;
+    height: 50px;
+}
+
+.TextAboutCeline{
+    padding:20px;text-align: justify;
+}
+.overflowFavoriteMmusic{
+    max-height: 300px; 
+    overflow-y: scroll;
+    padding-right:2px;
+}
+
+/*
+@media (min-width:400px) and (max-width:600px) 
 {
-    .gridDiv
+    .groupNavTitle
+    {
+        background-color: white;
+        display: flex;
+        flex-direction: row-reverse;
+        flex-direction: column-reverse;
+        justify-content:start;
+        padding-top: 20px;
+        align-items: center;
+        text-transform: uppercase;
+    }
+    .navBarr
+    {
+        background-color: white;
+        padding: 10px;
+    }
+    .imageHeader{
+        width: 100%;
+    }
+
+    .navBarr > a {
+    color:black;
+    background-color: white;
+    padding: 10px;
+    font-weight: bold;
+    color:rgb(119, 119, 74);
+    text-decoration: none;
+    font-size: 10px;
+    }
+
+    .logo{
+        background-color: white;
+        padding-right: 0;
+        width: 200px;
+        height: 50px;
+    }
+
+    /** FOOTER **
+    .footerContainer
+    {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    text-align: left;
+    padding:0;
+        
+    }
+    ul {
+    
+        display: flex;
+        flex-direction: column-reverse;
+        
+    
+    }
+
+}  */
+
+@media (min-width:300px) and (max-width: 496px) 
+{
+   .gridDiv
     {
         display:grid;
-        grid-template-columns: auto;
+        grid-template-columns: 5fr;
         gap: 10px;
-        row-gap: 100px;
+        row-gap: 0;
 
     }
 
     .gridDiv > div
     {
         background-color: white;
-        padding:10px;
-        
+        padding:0;
+        height: auto; 
     }
 
+} 
+
+@media (min-width:500px) and (max-width: 813px) 
+{
+    /** HEADER */
+    .groupNavTitle
+    {
+        background-color: white;
+        display: flex;
+        flex-direction: row-reverse;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        padding-top: 20px;
+        align-items: center;
+        text-transform: uppercase;
+    }
+    .logo{
+        background-color: white;
+        padding-right: 0;
+        width: 300px;
+        height: auto;
+    }
+    /***/
+    .imageHeader{
+        width: 100%;
+    }
+    /**  **/
+    .TextAboutCeline{
+        padding:20px;text-align: justify;
+    }
+    .container
+    {
+        width:100%;
+        margin-left:0;
+        margin-right:0;
+    }
+
+    .gridDiv
+    {
+        display:grid;
+        grid-template-columns: 5fr;
+        gap: 10px;
+        row-gap: 0;
+
+    }
+
+    .gridDiv > div
+    {
+        background-color: white;
+        padding:0;
+        height: auto; 
+    }
+
+    /** MY PLAY LIST **/
+    .listAlbum{
+        padding: 20px;
+        background-color:white;
+        align-items: center;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .listAlbum > div
+    {
+       background-color: transparent;
+       color: rgb(119, 119, 74);
+       font-weight: bold;
+    }
+    .overflowFavoriteMmusic{
+        display: flex;
+        justify-content: center;
+        height: 300px; 
+        overflow-y: scroll;
+        padding-right:0;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    /** FOOTER **/
+    .footerContainer
+    {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    text-align: center;
+    padding:0;
+        
+    }
+    ul {
+    
+        display: flex;
+        justify-content:center;
+        
+    
+    }
+    
     
 }
