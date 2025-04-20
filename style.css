@@ -32,12 +32,6 @@ body{
     text-transform: uppercase;
 }
 
-/* h1{
-    font-size: 20px;
-    padding-right: 10px;
-    background-color: white;
-} */
-
 .navBarr
 {
     background-color: white;
@@ -194,13 +188,6 @@ ul > li > a {
 
 }
 
-/*
-.GridTwo
-{
-    grid-column-start: 1;
-    grid-column-end: 5;
-} */
-
 .logo{
     background-color: white;
     padding-right: 30px;
@@ -217,66 +204,6 @@ ul > li > a {
     padding-right:2px;
 }
 
-/*
-@media (min-width:400px) and (max-width:600px) 
-{
-    .groupNavTitle
-    {
-        background-color: white;
-        display: flex;
-        flex-direction: row-reverse;
-        flex-direction: column-reverse;
-        justify-content:start;
-        padding-top: 20px;
-        align-items: center;
-        text-transform: uppercase;
-    }
-    .navBarr
-    {
-        background-color: white;
-        padding: 10px;
-    }
-    .imageHeader{
-        width: 100%;
-    }
-
-    .navBarr > a {
-    color:black;
-    background-color: white;
-    padding: 10px;
-    font-weight: bold;
-    color:rgb(119, 119, 74);
-    text-decoration: none;
-    font-size: 10px;
-    }
-
-    .logo{
-        background-color: white;
-        padding-right: 0;
-        width: 200px;
-        height: 50px;
-    }
-
-    /** FOOTER **
-    .footerContainer
-    {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: white;
-    text-align: left;
-    padding:0;
-        
-    }
-    ul {
-    
-        display: flex;
-        flex-direction: column-reverse;
-        
-    
-    }
-
-}  */
 
 @media (min-width:300px) and (max-width: 496px) 
 {
