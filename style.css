@@ -8,15 +8,12 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin:0;
 }
-.container
-{
+.container{
    max-width: 1000px;
    margin-left: auto;
    margin-right: auto;
 }
-
-.colorGreen
-{
+.colorGreen{
     color:rgb(57, 58, 58);
 }
 
@@ -79,7 +76,6 @@ body{
 
 
 }
- 
 /****/
 .liPFirstLine::first-line{
     color: var(--varGrayColor);
@@ -91,62 +87,41 @@ table {
     border: solid 2px white;
     width: 500px;
     text-align: center;
-
 }
-
 table ,th , td {
     border: solid 2px white;
     border-collapse: collapse;
     padding: 5px;
-
 }
-td > a
-{
-    
-   
+td > a{
     padding: 5px;
-    /* padding: 10px; */
-
-
 }
 
 /**  GRID */
-.gridDiv
-{
-
+.gridDiv{
     display:grid;
     grid-template-columns: 2fr 2fr;
     gap: 10px;
     row-gap: 30px;
     margin-top: 30px;
 }
-
-.gridDiv > div
-{
+.gridDiv > div{
     background-color: white;
-    /* padding-left: 0px;
-    padding-right: 0px;
-    padding-top: 10rem;
-    padding-bottom: 10rem; */
-    padding: 10px;
-    
+    padding: 10px; 
 }
 
 /* IMAGES ALBUM */
-.album
-{
+.album{
     display: grid;
     grid-template-columns: 2fr 2fr;
 }
 
 /***/
-#footer
-{
+#footer{
     background-color: white;
     border-top: solid 30px rgb(119, 119, 74);
 }
-.footerContainer
-{
+.footerContainer{
    max-width: 1000px;
    margin-left: auto;
    margin-right: auto;
@@ -155,39 +130,31 @@ td > a
    padding: 3rem;
     
 }
-
 p,  ul {
     padding: 1rem;
     color: white;   
 }
-
 ul {
     
     display: flex;
     justify-content: center;
-    
-
 
 }
 
 ul li {
     list-style: none;
 }
-
 ul > li > a {
     color: white;
     padding: 2px;
     text-decoration: none;
     border-bottom: solid 2px white;
 }
-
-.network > li > a:hover
-{
+.network > li > a:hover{
     color: rgb(119, 119, 74);
     background-color:white;
 
 }
-
 .logo{
     background-color: white;
     padding-right: 30px;
@@ -207,17 +174,14 @@ ul > li > a {
 
 @media (min-width:300px) and (max-width: 496px) 
 {
-   .gridDiv
-    {
+   .gridDiv{
         display:grid;
         grid-template-columns: 5fr;
         gap: 10px;
         row-gap: 0;
 
     }
-
-    .gridDiv > div
-    {
+    .gridDiv > div{
         background-color: white;
         padding:0;
         height: auto; 
@@ -228,8 +192,7 @@ ul > li > a {
 @media (min-width:500px) and (max-width: 813px) 
 {
     /** HEADER */
-    .groupNavTitle
-    {
+    .groupNavTitle{
         background-color: white;
         display: flex;
         flex-direction: row-reverse;
@@ -259,23 +222,17 @@ ul > li > a {
         margin-left:0;
         margin-right:0;
     }
-
-    .gridDiv
-    {
+    .gridDiv{
         display:grid;
         grid-template-columns: 5fr;
         gap: 10px;
         row-gap: 0;
-
     }
-
-    .gridDiv > div
-    {
+    .gridDiv > div{
         background-color: white;
         padding:0;
         height: auto; 
     }
-
     /** MY PLAY LIST **/
     .listAlbum{
         padding: 20px;
@@ -308,8 +265,7 @@ ul > li > a {
     margin-right: auto;
     background-color: white;
     text-align: center;
-    padding:0;
-        
+    padding:0;   
     }
     ul {
     
